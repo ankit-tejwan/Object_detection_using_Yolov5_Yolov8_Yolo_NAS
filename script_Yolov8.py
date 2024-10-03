@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 
+# yolov8 train CLI yolo train model=yolov8s-seg.pt data=/content/data.yaml epochs=100 batch=-1 patience=100 imgsz=640 dropout=0.1 augment=True
 # Load a COCO-pretrained YOLO-NAS-s model
 model = YOLO("yolov8s.pt")
 
