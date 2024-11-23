@@ -7,7 +7,7 @@ t1 = time.time()
 
 # Load YOLOv5 model
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt')  # Detection model
-#model = torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint16, inplace=True)
+#model = torch.quantization.quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint16, inplace=True) # qint8 qint16 qint32
 
 
 # Load original frame
