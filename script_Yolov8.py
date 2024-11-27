@@ -23,7 +23,7 @@ if image is None:
 results = model(input_image_path)
 
 # Print results (for debugging purposes)
-print("Results:", results)
+#print("Results:", results)
 
 # Check if results contain detections
 if not results or not results[0].boxes:
